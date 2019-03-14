@@ -36,9 +36,9 @@ console.log(result);
  */
 
 // Declare a tuple type
-let x: [string, number];
+let x: [string, number, number, number, number, number];
 // Initialize it
-x = ["hello", 10]; // OK
+x = ["hello", 10, 12, 12, 12, 12]; // OK
 // Initialize it incorrectly
 // x = [10, "hello"]; // Error
 
@@ -46,7 +46,7 @@ console.log(x[0].substr(1)); // OK
 // console.log(x[1].substr(1));
 // Error, Property 'substr' does not exist on type 'number'.
 
-x[3] = "world";
+x[0] = "world";
 // OK, 'string' can be assigned to 'string | number'
 x[5] = 100.25;
 console.log(x[5].toString());
