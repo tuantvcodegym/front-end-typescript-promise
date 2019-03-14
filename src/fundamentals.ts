@@ -8,21 +8,22 @@ import "./scss/styles.scss";
 /**
  * var vs let/const
  */
-/*
-function main() {
+
+function main1() {
   console.log("START");
   if (true) {
     var lang = "vi";
     let target = "en-us";
     console.log("inside block");
     console.log(target);
+    console.log(target);
   }
   console.log(lang);
-  console.log(target);
+
 }
- */
-/*
-function main() {
+
+
+function main3() {
   var x = 5;
   console.log(x);
   var x = 10;
@@ -30,26 +31,23 @@ function main() {
 
   let y = 55;
   console.log(y);
-  let y = 100;
-  console.log(y);
+  let a = 100;
+  console.log(a);
 }
-*/
 
-/*
-function main() {
+
+function main4() {
   console.log(x);
   var x = 5;
-
-  console.log(y);
   let y = 10;
+  console.log(y);
 }
- */
 
 /**
  * Data types
  */
-/*
-function main() {
+
+function main5() {
   let message: string;
   let total: number = 100;
   let isProduction = true;
@@ -80,9 +78,10 @@ function main() {
   unknown = 'changed';
 
   const post: IPost = {
-
+    id: 'name',
+    title: 'name'
   };
-  message = 50;
+  message = 'name';
 
   function getPost(postId: string): IPost {
     // do something to retrieve post
@@ -94,7 +93,7 @@ function main() {
     } as IPost;
   }
 }
- */
+
 
 function main() {}
 
