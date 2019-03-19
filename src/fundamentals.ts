@@ -12,42 +12,45 @@ import "./scss/styles.scss";
 function main1() {
   console.log("START");
   if (true) {
-    var lang = "vi";
+    let lang = "vi";
     let target = "en-us";
     console.log("inside block");
     console.log(target);
-    console.log(target);
+    console.log(lang);
+  console.log(target);
   }
-  console.log(lang);
 
 }
+ 
 
-
-function main3() {
+function main2() {
   var x = 5;
   console.log(x);
   var x = 10;
   console.log(x);
 
-  let y = 55;
-  console.log(y);
-  let a = 100;
+  let a = 55;
   console.log(a);
+  let y = 100;
+  console.log(y);
 }
 
 
-function main4() {
+
+function main3() {
   console.log(x);
   var x = 5;
+
   let y = 10;
   console.log(y);
 }
+
 
 /**
  * Data types
  */
 
-function main5() {
+function main4() {
   let message: string;
   let total: number = 100;
   let isProduction = true;
@@ -78,10 +81,11 @@ function main5() {
   unknown = 'changed';
 
   const post: IPost = {
-    id: 'name',
-    title: 'name'
+      id: 'tuan',
+      title: 'tuantran',
+      body: 'tranvantuan',
   };
-  message = 'name';
+  message = 'tuan';
 
   function getPost(postId: string): IPost {
     // do something to retrieve post
@@ -93,7 +97,6 @@ function main5() {
     } as IPost;
   }
 }
-
 
 function main() {}
 
